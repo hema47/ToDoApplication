@@ -1,0 +1,21 @@
+<html>
+<head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/asset/todo-list.js"></script>
+         <link href="/asset/styles.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+<div id="todo-table">
+<form>
+<input type="text" name="item" placeholder="Add new item...." required />
+<button type="submit">Add Item</button>
+</form>
+<ul>
+<!-- dynamically data add -->
+<% for(var i=0;i<todos.length;i++){ %>
+     <li><%=todos[i].item %></li>
+     <%}%>
+</ul>
+</div>
+</body>
+</html>
